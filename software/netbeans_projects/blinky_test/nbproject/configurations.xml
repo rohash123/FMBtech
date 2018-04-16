@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="../../nRF5_SDK_14.0.0/examples/peripheral/blinky" name="0">
+      <in>main.c</in>
+    </df>
+    <logicalFolder name="components"
+                   displayName="components"
+                   projectFiles="true"
+                   root="../../nRF5_SDK_14.0.0/components">
+      <logicalFolder name="boards" displayName="boards" projectFiles="true">
+        <itemPath>../../nRF5_SDK_14.0.0/components/boards/boards.c</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/boards/boards.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/boards/pca10040.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="device" displayName="device" projectFiles="true">
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/compiler_abstraction.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf51_to_nrf52.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf52.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf52832_peripherals.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf52_bitfields.h</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/device/nrf52_name_change.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="drivers_nrf" displayName="drivers_nrf" projectFiles="true">
+        <logicalFolder name="delay" displayName="delay" projectFiles="true">
+          <itemPath>../../nRF5_SDK_14.0.0/components/drivers_nrf/delay/nrf_delay.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="hal" displayName="hal" projectFiles="true">
+          <itemPath>../../nRF5_SDK_14.0.0/components/drivers_nrf/hal/nrf_gpio.h</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/drivers_nrf/hal/nrf_peripherals.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="libraries" displayName="libraries" projectFiles="true">
+        <logicalFolder name="util" displayName="util" projectFiles="true">
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/app_error.c</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/app_error.h</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/app_error_weak.h</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/nordic_common.h</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/nrf_assert.h</itemPath>
+          <itemPath>../../nRF5_SDK_14.0.0/components/libraries/util/sdk_errors.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="softdevice" displayName="softdevice" projectFiles="true">
+        <logicalFolder name="s132" displayName="s132" projectFiles="true">
+          <logicalFolder name="headers" displayName="headers" projectFiles="true">
+            <itemPath>../../nRF5_SDK_14.0.0/components/softdevice/s132/headers/nrf_error.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="toolchain" displayName="toolchain" projectFiles="true">
+        <logicalFolder name="cmsis" displayName="cmsis" projectFiles="true">
+          <logicalFolder name="include" displayName="include" projectFiles="true">
+            <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include/cmsis_gcc.h</itemPath>
+            <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include/core_cm4.h</itemPath>
+            <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include/core_cmFunc.h</itemPath>
+            <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include/core_cmInstr.h</itemPath>
+            <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include/core_cmSimd.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/system_nrf52.c</itemPath>
+        <itemPath>../../nRF5_SDK_14.0.0/components/toolchain/system_nrf52.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky</Elem>
+  </sourceRootList>
+  <projectmakefile>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O3 -std=c99"/>
+      </flagsDictionary>
+      <codeAssistance>
+        <buildAnalyzer>false</buildAnalyzer>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>../../nRF5_SDK_14.0.0</pElem>
+            </incDir>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>../../nRF5_SDK_14.0.0</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</preBuildCommandWorkingDir>
+          <preBuildCommand>make</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../../nRF5_SDK_14.0.0/components/boards/boards.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../nRF5_SDK_14.0.0/components/libraries/util/app_error.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../nRF5_SDK_14.0.0/components/toolchain/system_nrf52.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../nRF5_SDK_14.0.0/examples/peripheral/blinky/main.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <folder path="0">
+        <cTool>
+          <incDir>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/drivers_nrf/delay</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/boards</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/device</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/drivers_nrf/hal</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/libraries/util</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/softdevice/s132/headers</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/config</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="components/boards">
+        <cTool>
+          <incDir>
+            <pElem>../../nRF5_SDK_14.0.0/components/boards</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/drivers_nrf/hal</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/device</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/libraries/util</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/softdevice/s132/headers</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/config</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="components/libraries">
+        <cTool>
+          <incDir>
+            <pElem>../../nRF5_SDK_14.0.0/components/libraries/util</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/device</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/softdevice/s132/headers</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/config</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="components/toolchain">
+        <cTool>
+          <incDir>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/toolchain/cmsis/include</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/components/device</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include</pElem>
+            <pElem>../../gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include</pElem>
+            <pElem>../../nRF5_SDK_14.0.0/examples/peripheral/blinky/pca10040/s132/armgcc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>

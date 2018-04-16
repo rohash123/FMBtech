@@ -1,0 +1,288 @@
+{
+    "author": {
+        "email": "venkat.krishnan@venkatech.io",
+        "name": "Venkat Krishnan"
+    },
+    "description": {
+        "EN": "EAGLE default 6 layer CAM job."
+    },
+    "output_type": "zip",
+    "outputs": [
+        {
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+                {
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": true,
+                        "VIA": true
+                    },
+                    "filename_format": "outputs/drills.xln",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "Excellon",
+                    "type": "excellon"
+                }
+            ]
+        },
+        {
+            "filename_prefix": "fmbtech_02-28-2018_v5",
+            "format_specifier": {
+                "decimal": 4,
+                "integer": 3
+            },
+            "generate_job_file": true,
+            "output_type": "gerber",
+            "outputs": [
+                {
+                    "board_outline": true,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 1,
+                        "layer_details": "mixed",
+                        "layer_type": "Top"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        1,
+                        18,
+                        17
+                    ],
+                    "milling": false,
+                    "name": "Top Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 2,
+                        "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        17,
+                        18,
+                        4
+                    ],
+                    "name": "EAGLE Copper Layer 4",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 3,
+                        "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        17,
+                        18,
+                        8
+                    ],
+                    "name": "EAGLE Copper Layer 8",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 4,
+                        "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        17,
+                        18,
+                        10
+                    ],
+                    "name": "EAGLE Copper Layer 10",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 5,
+                        "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        17,
+                        18,
+                        12
+                    ],
+                    "name": "EAGLE Copper Layer 12",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": true,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 6,
+                        "layer_details": "mixed",
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        16,
+                        17,
+                        18
+                    ],
+                    "name": "Bottom Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": true,
+                    "config": {
+                        "file_function": "Profile",
+                        "plating": "non-plated"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                    ],
+                    "milling": true,
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Soldermask",
+                        "index": 1,
+                        "layer_type": "top"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        29
+                    ],
+                    "name": "Soldermask Top",
+                    "polarity": "negative",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Soldermask",
+                        "index": 1,
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        30
+                    ],
+                    "name": "Soldermask Bottom",
+                    "polarity": "negative",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Paste",
+                        "layer_type": "top"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "Solderpaste Top",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Paste",
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        32
+                    ],
+                    "milling": false,
+                    "name": "Solderpaste Bottom",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": true,
+                    "config": {
+                        "file_function": "Legend",
+                        "index": 1,
+                        "layer_type": "top"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        21,
+                        25
+                    ],
+                    "milling": true,
+                    "name": "Silkscreen Top",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Legend",
+                        "index": 1,
+                        "layer_type": "bottom"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        22,
+                        26
+                    ],
+                    "milling": false,
+                    "name": "Silkscreen Bottom",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": true,
+                    "config": {
+                        "file_function": "Vcut"
+                    },
+                    "filename_format": "%FF.gbr",
+                    "layers": [
+                        102
+                    ],
+                    "milling": true,
+                    "name": "VScore",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                }
+            ],
+            "version": "X2"
+        }
+    ],
+    "timestamp": "2018-02-28T16:34:51",
+    "type": "EAGLE CAM job",
+    "units": "metric",
+    "version": "8.6.1"
+}

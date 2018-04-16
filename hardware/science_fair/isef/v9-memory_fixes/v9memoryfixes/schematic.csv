@@ -1,0 +1,15 @@
+"Part";"Value";"Device";"Package";"Description";"DESCRIPTION";"DIGI-KEY_PART_NUMBER";"DIGI-KEY_PURCHASE_URL";"MANUFACTURER_PART_NUMBER";"MF";"MP";"PACKAGE";"PROD_ID";"VENDOR";
+"C1";"C0402X5R0G104M020BCCAP_0402-L";"C0402X5R0G104M020BCCAP_0402-L";"CAP_0402-L";"";"";"";"";"C0402C0G1C101J020BC";"";"";"";"";"TDK";
+"C2";"C0402X5R0G104M020BCCAP_0402-L";"C0402X5R0G104M020BCCAP_0402-L";"CAP_0402-L";"";"";"";"";"C0402C0G1C101J020BC";"";"";"";"";"TDK";
+"C3";"C0402X5R0G104M020BCCAP_0402-L";"C0402X5R0G104M020BCCAP_0402-L";"CAP_0402-L";"";"";"";"";"C0402C0G1C101J020BC";"";"";"";"";"TDK";
+"C4";"C0402X5R0G104M020BCCAP_0402-L";"C0402X5R0G104M020BCCAP_0402-L";"CAP_0402-L";"";"";"";"";"C0402C0G1C101J020BC";"";"";"";"";"TDK";
+"C5";"C0402C0G1C101J020BCCAP_0402-L";"C0402C0G1C101J020BCCAP_0402-L";"CAP_0402-L";"";"";"";"";"C0402C0G1C101J020BC";"";"";"";"";"TDK";
+"C6";"GRM1555C1H6R0CA01D";"GRM1555C1H6R0CA01D";"CAPC1005X55N";"Cap Ceramic 6pF 50V C0G 0.25pF Pad SMD 0402 125C T/R";" 0402 6 pF 50 V ±0.25 pF Tolerance C0G SMT Multilayer Ceramic Capacitor ";"490-8222-1-ND";"https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM1555C1H6R0CA01D/490-8222-1-ND/4380516?WT.z_cid=ref_snapeda&utm_source=snapeda&utm_medium=aggregator&utm_campaign=buynow";"";"Murata";"GRM1555C1H6R0CA01D";"0402 Murata";"";"";
+"C7";"GRM1555C1H6R0CA01D";"GRM1555C1H6R0CA01D";"CAPC1005X55N";"Cap Ceramic 6pF 50V C0G 0.25pF Pad SMD 0402 125C T/R";" 0402 6 pF 50 V ±0.25 pF Tolerance C0G SMT Multilayer Ceramic Capacitor ";"490-8222-1-ND";"https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM1555C1H6R0CA01D/490-8222-1-ND/4380516?WT.z_cid=ref_snapeda&utm_source=snapeda&utm_medium=aggregator&utm_campaign=buynow";"";"Murata";"GRM1555C1H6R0CA01D";"0402 Murata";"";"";
+"C9";"4P7UFCAPACITOR4P7UFCAPACITOR";"4P7UFCAPACITOR4P7UFCAPACITOR";"4P7UFCAPACITOR";"";"";"";"";"C0816X5R0J475M050AC";"";"";"";"";"TDK";
+"J2";"header";"CONN_07";"1X07";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"";"";"";"";"";"";"";"";"";
+"U$1";"ADXL362";"ADXL362";"TFLGA-16/3.3MMX3.1MM";"";"";"";"";"";"";"";"";"";"";
+"U$3";"AT25SF161-UUD-T";"AT25SF161-UUD-T";"AT25SF161-UUD-T";"";"";"";"";"";"";"";"";"";"";
+"U$6";"32MHZCRYSTAL";"32MHZCRYSTAL";"32MHZCRYSTAL";"";"";"";"";"";"";"";"";"";"";
+"U$7";"1UFCAPACITOR";"1UFCAPACITOR";"1UFCAPACITOR";"";"";"";"";"";"";"";"";"";"";
+"U1";"NRF52832";"NRF52832";"QFN48-6X6MM";"Nordic nRF52832 Bluetooth Smart/ANT/2.4GHz RF SoC";"";"";"";"";"";"";"";"IC-13460";"";

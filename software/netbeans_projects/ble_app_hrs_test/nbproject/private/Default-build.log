@@ -1,0 +1,73 @@
+mkdir _build
+cd _build && mkdir nrf52832_xxaa
+Compiling file: nrf_log_backend_rtt.c
+Compiling file: nrf_log_backend_serial.c
+Compiling file: nrf_log_backend_uart.c
+Compiling file: nrf_log_default_backends.c
+Compiling file: nrf_log_frontend.c
+Compiling file: nrf_log_str_formatter.c
+Compiling file: app_button.c
+Compiling file: app_error.c
+Compiling file: app_error_weak.c
+Compiling file: app_scheduler.c
+Compiling file: app_timer.c
+Compiling file: app_util_platform.c
+Compiling file: crc16.c
+Compiling file: fds.c
+Compiling file: hardfault_implementation.c
+Compiling file: nrf_assert.c
+Compiling file: nrf_atfifo.c
+Compiling file: nrf_balloc.c
+Compiling file: nrf_fprintf.c
+Compiling file: nrf_fprintf_format.c
+Compiling file: nrf_fstorage.c
+Compiling file: nrf_fstorage_sd.c
+Compiling file: nrf_memobj.c
+Compiling file: nrf_pwr_mgmt.c
+Compiling file: nrf_section_iter.c
+Compiling file: nrf_strerror.c
+Compiling file: sdk_mapped_flags.c
+Compiling file: sensorsim.c
+Compiling file: boards.c
+Compiling file: nrf_drv_clock.c
+Compiling file: nrf_drv_common.c
+Compiling file: nrf_drv_gpiote.c
+Compiling file: nrf_drv_uart.c
+Compiling file: bsp.c
+Compiling file: bsp_btn_ble.c
+Compiling file: bsp_nfc.c
+Compiling file: main.c
+Compiling file: RTT_Syscalls_GCC.c
+Compiling file: SEGGER_RTT.c
+Compiling file: SEGGER_RTT_printf.c
+Compiling file: ble_advdata.c
+Compiling file: ble_advertising.c
+Compiling file: ble_conn_params.c
+Compiling file: ble_conn_state.c
+Compiling file: ble_srv_common.c
+Compiling file: gatt_cache_manager.c
+Compiling file: gatts_cache_manager.c
+Compiling file: id_manager.c
+Compiling file: nrf_ble_gatt.c
+Compiling file: peer_data_storage.c
+Compiling file: peer_database.c
+Compiling file: peer_id.c
+Compiling file: peer_manager.c
+Compiling file: pm_buffer.c
+Compiling file: pm_mutex.c
+Compiling file: security_dispatcher.c
+Compiling file: security_manager.c
+Assembling file: gcc_startup_nrf52.S
+Compiling file: system_nrf52.c
+Compiling file: ble_bas.c
+Compiling file: ble_dis.c
+Compiling file: ble_hrs.c
+Compiling file: nrf_sdh.c
+Compiling file: nrf_sdh_ble.c
+Compiling file: nrf_sdh_soc.c
+Linking target: _build/nrf52832_xxaa.out
+   text	   data	    bss	    dec	    hex	filename
+  66644	    664	   4516	  71824	  11890	_build/nrf52832_xxaa.out
+Preparing: _build/nrf52832_xxaa.hex
+Preparing: _build/nrf52832_xxaa.bin
+DONE nrf52832_xxaa

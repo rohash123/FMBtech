@@ -1,0 +1,20 @@
+mkdir _build
+cd _build && mkdir nrf52832_xxaa
+Assembling file: gcc_startup_nrf52.S
+Compiling file: system_nrf52.c
+Compiling file: main.c
+Compiling file: boards.c
+Compiling file: app_error.c
+Compiling file: app_error_weak.c
+Compiling file: app_util_platform.c
+Compiling file: nrf_assert.c
+Compiling file: nrf_section_iter.c
+Compiling file: nrf_strerror.c
+Compiling file: nrf_sdh.c
+Compiling file: nrf_sdh_soc.c
+Linking target: _build/nrf52832_xxaa.out
+   text	   data	    bss	    dec	    hex	filename
+   2368	    108	     28	   2504	    9c8	_build/nrf52832_xxaa.out
+Preparing: _build/nrf52832_xxaa.hex
+Preparing: _build/nrf52832_xxaa.bin
+DONE nrf52832_xxaa

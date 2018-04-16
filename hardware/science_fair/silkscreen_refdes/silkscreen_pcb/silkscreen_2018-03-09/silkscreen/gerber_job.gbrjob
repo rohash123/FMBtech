@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,8.6.3*%
+%TF.CreationDate,2018-03-09T19:37:19Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Venkat Krishnan <venkat.krishnan@venkatech.io>*%
+%TJ.B_ID,schematic*%
+%TJ.B_LayerNum,6*%
+%TJ.B_Thickness,1.580000*%
+%TJ.B_Size_X,35.000000*%
+%TJ.B_Size_Y,25.000000*%
+M02*
