@@ -1,0 +1,40 @@
+if (board) board(B) {
+
+  string a = "";
+  output("/Users/vk/Documents/FMBtechnologies/product/hardware/science_fair/isef/pcb_cart-order/corrections/silkscreen/silk_xy.txt","at") {
+  B.elements(E) {
+     int wasSmd,
+         xmax =-2147483648,
+         xmin = 2147483647,
+         ymax = xmax,
+         ymin = xmin;
+         wasSmd = 0;
+        E.package.contacts(C) {
+
+            wasSmd = 1;
+            if (C.x > xmax) xmax = C.x;
+            if (C.y > ymax) ymax = C.y;
+            if (C.x < xmin) xmin = C.x;
+            if (C.y < ymin) ymin = C.y;
+      
+         }
+
+         sprintf(a, a + "CHANGE LAYER 21; CHANGE SIZE 0.2; TEXT %s r0 (%f %f);\n",
+         E.name,u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2));
+
+
+   }
+                printf("%s", a);
+                exit(a);
+
+ }
+
+  
+
+
+}
+
+else {
+   dlgMessageBox("\n    Proceed    \n");
+   exit (0);
+}
