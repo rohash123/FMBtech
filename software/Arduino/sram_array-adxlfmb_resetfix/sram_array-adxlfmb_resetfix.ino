@@ -2,7 +2,7 @@
 
 
 int CS = 18;
-int adxlpower = 8;
+int adxlPower = 8;
 
 int adxlResetTimer = 0;
 
@@ -18,8 +18,8 @@ byte data[6970][6];
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(adxlpower, OUTPUT);
-  digitalWrite(adxlpower,HIGH);
+  pinMode(adxlPower, OUTPUT);
+  digitalWrite(adxlPower,HIGH);
   pinMode(CS, OUTPUT);
   digitalWrite(CS, HIGH);
   SPI.begin();
@@ -31,6 +31,13 @@ void loop() {
 
   while(count < 6970){
 
+    if(adxlResetTimer < 40){
+      digitalWrite(CS, LOW);
+      digitalWrite(adxlPower, LOW);
+      delay(200);
+      digitalWrite(CS,HIGH);
+      digitalWrite(adxlPower, HIGH);
+    }
     
     if(Serial.available() > 0){
       incdata = Serial.read();
