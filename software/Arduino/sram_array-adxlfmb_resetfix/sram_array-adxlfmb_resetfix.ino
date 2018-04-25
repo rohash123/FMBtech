@@ -4,12 +4,12 @@
 int CS = 18;
 int adxlPower = 8;
 
-int adxlResetTimer = 0;
-
 int incdata = 0;
 int sampleTime = 1000;
 
 int count = 0;
+int adxlResetTimer = 0;
+
 byte data[6970][6];
 
 
@@ -28,7 +28,8 @@ void setup() {
 }
 
 void loop() {
-
+  // put your main code here, to run repeatedly:
+  
   while(count < 6970){
 
     if(adxlResetTimer >= 40){
@@ -137,10 +138,8 @@ void loop() {
      data[count][5] = LSBz;
   // data[count][6] = devad;
 
-
      count++;
      adxlResetTimer++;
-
     }
 }
 
