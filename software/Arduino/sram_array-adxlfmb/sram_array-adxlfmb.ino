@@ -32,7 +32,7 @@ void loop() {
    if(Serial.available() > 0){
      incdata = Serial.read();
      if(incdata == 49){
-       //read
+       //read - command "1"
          Serial.println("data is as follows");
          for(int i = 0; i < 6970; i++){
            Serial.print(data[i][0]);
@@ -56,7 +56,7 @@ void loop() {
          }
          Serial.println("read complete");
      }else if(incdata ==  50){
-       //erase
+       //erase - command "2"
        for(int i = 0; i < 6970; i++){
          for(int j = 0; j < 6; j++){
            data[i][j] = 0;
