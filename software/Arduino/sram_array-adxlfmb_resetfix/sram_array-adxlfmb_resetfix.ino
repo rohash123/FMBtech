@@ -78,69 +78,71 @@ void loop() {
        }
     }
 
-    switch(incdata){
-       case 97: sampleTime = 5000; // a
-               break;
-       case 98: sampleTime = 2000; // b
-               break;
-       case 99: sampleTime = 1500; // c
-               break;
-       case 100: sampleTime = 1000; // d
-               break;
-       case 101: sampleTime = 500; // e
-               break;
-       case 102: sampleTime = 200; // f
-               break;
-       case 103: sampleTime = 100; // g
-               break;
-       case 104: sampleTime = 50; // h
-               break;
-     }
-  
-     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
-     digitalWrite(CS, LOW);
-     SPI.transfer(0x0A);
-     SPI.transfer(0x2D);
-     SPI.transfer(0b00000010);
-     delay(50);
-     digitalWrite(CS, HIGH);
-     SPI.endTransaction();
-
-     // put your main code here, to run repeatedly:
-     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
-     digitalWrite(CS, LOW);
-     SPI.transfer(0x0B);
-     SPI.transfer(0x00);
-     byte devad = SPI.transfer(0x00);
-
-     delay(sampleTime);
-     digitalWrite(CS, HIGH);
-     SPI.endTransaction();
-
-     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
-     digitalWrite(CS, LOW);
-     SPI.transfer(0x0B);
-     SPI.transfer(0x0E);
-     byte LSBx = SPI.transfer(0x00);
-     byte MSBx = SPI.transfer(0x00);
-     byte LSBy = SPI.transfer(0x00);
-     byte MSBy = SPI.transfer(0x00);
-     byte LSBz = SPI.transfer(0x00);
-     byte MSBz = SPI.transfer(0x00);
-     digitalWrite(CS, HIGH);
-     SPI.endTransaction();
-  
-     data[count][0] = MSBx;
-     data[count][1] = LSBx;
-     data[count][2] = MSBy;
-     data[count][3] = LSBy;
-     data[count][4] = MSBz;
-     data[count][5] = LSBz;
-  // data[count][6] = devad;
-
-     count++;
-     adxlResetTimer++;
+   switch(incdata){
+      case 97: sampleTime = 5000; // a
+              break;
+      case 98: sampleTime = 2000; // b
+              break;
+      case 99: sampleTime = 1500; // c
+              break;
+      case 100: sampleTime = 1000; // d
+              break;
+      case 101: sampleTime = 500; // e
+              break;
+      case 102: sampleTime = 200; // f
+              break;
+      case 103: sampleTime = 100; // g
+              break;
+      case 104: sampleTime = 50; // h
+              break;
     }
+  
+    SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
+    digitalWrite(CS, LOW);
+    SPI.transfer(0x0A);
+    SPI.transfer(0x2D);
+    SPI.transfer(0b00000010);
+    delay(50);
+    digitalWrite(CS, HIGH);
+    SPI.endTransaction();
+
+/*    
+    SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
+    digitalWrite(CS, LOW);
+    SPI.transfer(0x0B);
+    SPI.transfer(0x00);
+    byte devad = SPI.transfer(0x00);
+
+*/
+
+    delay(sampleTime);
+    digitalWrite(CS, HIGH);
+    SPI.endTransaction();
+
+    SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
+    digitalWrite(CS, LOW);
+    SPI.transfer(0x0B);
+    SPI.transfer(0x0E);
+    byte LSBx = SPI.transfer(0x00);
+    byte MSBx = SPI.transfer(0x00);
+    byte LSBy = SPI.transfer(0x00);
+    byte MSBy = SPI.transfer(0x00);
+    byte LSBz = SPI.transfer(0x00);
+    byte MSBz = SPI.transfer(0x00);
+    digitalWrite(CS, HIGH);
+    SPI.endTransaction();
+  
+    data[count][0] = MSBx;
+    data[count][1] = LSBx;
+    data[count][2] = MSBy;
+    data[count][3] = LSBy;
+    data[count][4] = MSBz;
+    data[count][5] = LSBz;
+ // data[count][6] = devad;
+
+    count++;
+    adxlResetTimer++;
+   }
 }
 
 void adxlReset(int delayTime){
