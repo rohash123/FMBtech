@@ -31,12 +31,8 @@ void loop() {
 
   while(count < 6970){
 
-    if(adxlResetTimer < 40){
-      digitalWrite(CS, LOW);
-      digitalWrite(adxlPower, LOW);
-      delay(200);
-      digitalWrite(CS,HIGH);
-      digitalWrite(adxlPower, HIGH);
+    if(adxlResetTimer >= 40){
+      adxlReset(200);
     }
     
     if(Serial.available() > 0){
@@ -147,3 +143,13 @@ void loop() {
 
     }
 }
+
+void adxlReset(int delayTime){
+  digitalWrite(CS, LOW);
+  digitalWrite(adxlPower, LOW);
+  delay(delayTime);
+  digitalWrite(CS,HIGH);
+  digitalWrite(adxlPower, HIGH);
+  adxlResetTimer = 0;
+}
+
