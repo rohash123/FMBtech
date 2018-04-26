@@ -42,17 +42,17 @@ void loop() {
          //read - command "1"
            Serial.println("READ START ==========");
            for(int i = 0; i < 6970; i++){
-             Serial.print(data[i][0], BIN);
+             Serial.print(data[i][0]);
              Serial.print(", ");
-             Serial.print(data[i][1], BIN);
+             Serial.print(data[i][1]);
              Serial.print(", ");
-             Serial.print(data[i][2], BIN);
+             Serial.print(data[i][2]);
              Serial.print(", ");
-             Serial.print(data[i][3], BIN);
+             Serial.print(data[i][3]);
              Serial.print(", ");
-             Serial.print(data[i][4], BIN);
+             Serial.print(data[i][4]);
              Serial.print(", ");
-             Serial.print(data[i][5], BIN);
+             Serial.print(data[i][5]);
              // Serial.print(", ");
              // Serial.print(data[i][6]);
              Serial.println();
@@ -146,10 +146,8 @@ void loop() {
 }
 
 void adxlReset(int delayTime){
-  digitalWrite(CS, LOW);
   digitalWrite(adxlPower, LOW);
   delay(delayTime);
-  digitalWrite(CS,HIGH);
   digitalWrite(adxlPower, HIGH);
   adxlResetTimer = 0;
 }
