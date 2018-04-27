@@ -34,6 +34,7 @@ void loop() {
 
     if(adxlResetTimer >= 40){
       adxlReset(200);
+      Serial.println("RESET");
     }
     
     if(Serial.available() > 0){
@@ -96,6 +97,8 @@ void loop() {
       case 104: sampleTime = 50; // h
               break;
     }
+
+    // possible error due to too high freq input ->
   
     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
     digitalWrite(CS, LOW);
@@ -106,6 +109,7 @@ void loop() {
     digitalWrite(CS, HIGH);
     SPI.endTransaction();
 
+    // <-
 /*    
     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
     digitalWrite(CS, LOW);
