@@ -25,6 +25,7 @@ void setup() {
   SPI.begin();
   SPI.setDataMode(SPI_MODE0);
   Serial.begin(9600);
+
 }
 
 void loop() {
@@ -34,6 +35,7 @@ void loop() {
 
     if(adxlResetTimer >= 40){
       adxlReset(200);
+      setPowerCtl();
       Serial.println("RESET");
     }
     
@@ -100,6 +102,7 @@ void loop() {
 
     // possible error due to too high freq input ->
   
+   /*   
     SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
     digitalWrite(CS, LOW);
     SPI.transfer(0x0A);
@@ -108,6 +111,8 @@ void loop() {
     delay(50);
     digitalWrite(CS, HIGH);
     SPI.endTransaction();
+
+    */
 
     // <-
 /*    
@@ -154,5 +159,16 @@ void adxlReset(int delayTime){
   delay(delayTime);
   digitalWrite(adxlPower, HIGH);
   adxlResetTimer = 0;
+}
+
+void setPowerCtl(){
+   SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));
+   digitalWrite(CS, LOW);
+   SPI.transfer(0x0A);
+   SPI.transfer(0x2D);
+   SPI.transfer(0b00000010);
+   delay(50);
+   digitalWrite(CS, HIGH);
+   SPI.endTransaction();
 }
 
